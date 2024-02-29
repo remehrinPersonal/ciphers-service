@@ -28,7 +28,7 @@ jobs:
     - name: Unit Testing
       run: |
       cd ciphers_project
-      python3 manage.py test
+      python manage.py test
     - name: Build and push the image
       run: |
           docker login --username remehrinpersonal --password ${{secrets.ACCESS_TOKEN}} ghcr.io
